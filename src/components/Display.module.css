@@ -1,0 +1,72 @@
+.display {
+  background-color: var(--Very-dark-cyan);
+  padding: 3rem 2rem 2rem;
+  border-radius: 1rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* gap: 5rem; */
+  width: 300px;
+  margin-bottom: 3rem;
+}
+
+.label {
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  color: var(--White);
+  font-size: 1.2rem;
+}
+
+.unit {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.amount {
+  color: var(--Light-grayish-cyan);
+  font-size: 2.2rem;
+}
+
+.resetBtn {
+  border: none;
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--Very-dark-cyan);
+  background-color: var(--Strong-cyan);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.resetBtn:focus {
+  outline: none;
+}
+
+.resetBtn:focus-visible {
+  outline: 2px solid var(--Light-grayish-cyan);
+}
+
+.resetBtn:not([disabled]):hover {
+  background-color: var(--Light-grayish-cyan);
+}
+
+.resetBtn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

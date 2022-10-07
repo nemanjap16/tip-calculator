@@ -1,0 +1,112 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-grayish-cyan);
+  height: 100vh;
+}
+
+.app-name h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: var(--Very-dark-cyan);
+}
+
+.calculator {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--White);
+  border-radius: 1.8rem;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 800px) {
+  .calculator {
+    flex-direction: column;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.select-percent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.select-tip {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--Grayish-cyan);
+}
+
+.percent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 0.6rem;
+}
+
+.input-radio {
+  position: relative;
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+  padding: 6px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100px;
+  cursor: pointer;
+}
+
+[name="tip"] {
+  opacity: 0;
+}
+
+[name="tip"]:hover + .tip-value {
+  background-color: var(--Grayish-cyan);
+}
+
+[name="tip"]:checked + .tip-value {
+  background-color: var(--Strong-cyan);
+}
+
+.input-text {
+  width: 100px;
+  height: 100%;
+  background-color: var(--Very-light-grayish-cyan);
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-text::placeholder {
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.tip-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tip-value span {
+  font-size: 18px;
+  margin-left: 2px;
+}
